@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learning to Code – HTML Book</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f7f7fb;
+      color: #222;
+    }
+    header, footer {
+      background: #222;
+      color: #fff;
+      padding: 1rem 2rem;
+    }
+    header h1, footer p {
+      margin: 0;
+    }
+    main {
+      max-width: 900px;
+      margin: 1.5rem auto 3rem;
+      padding: 0 1rem 2rem;
+      background: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      border-radius: 8px;
+    }
+    nav {
+      border-bottom: 1px solid #eee;
+      padding: 1rem 1.5rem;
+      background: #fafafa;
+      border-radius: 8px 8px 0 0;
+    }
+    nav h2 {
+      margin-top: 0;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #555;
+    }
+    nav ul {
+      list-style: none;
+      padding-left: 0;
+      margin: 0.5rem 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem 1.5rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: #0066cc;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 1.5rem;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    section:last-of-type {
+      border-bottom: none;
+    }
+    h2 {
+      margin-top: 0;
+      color: #333;
+    }
+    h3 {
+      margin-top: 1.25rem;
+      color: #444;
+    }
+    code {
+      background: #f3f3f7;
+      padding: 0.15rem 0.35rem;
+      border-radius: 4px;
+      font-family: "Fira Code", Consolas, monospace;
+      font-size: 0.95rem;
+    }
+    pre {
+      background: #111827;
+      color: #e5e7eb;
+      padding: 1rem;
+      border-radius: 6px;
+      overflow-x: auto;
+      font-size: 0.9rem;
+    }
+    pre code {
+      background: none;
+      padding: 0;
+    }
+    .tip {
+      border-left: 4px solid #10b981;
+      background: #ecfdf5;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    .exercise {
+      border-left: 4px solid #6366f1;
+      background: #eef2ff;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Learning to Code</h1>
+    <p>A gentle, practical HTML book for beginners</p>
+  </header>
+
+  <main>
+    <nav>
+      <h2>Table of Contents</h2>
+      <ul>
+        <li><a href="#chapter-1">Chapter 1 – What Is Code?</a></li>
+        <li><a href="#chapter-2">Chapter 2 – Your First Tools</a></li>
+        <li><a href="#chapter-3">Chapter 3 – Thinking Like a Programmer</a></li>
+        <li><a href="#chapter-4">Chapter 4 – HTML Basics</a></li>
+        <li><a href="#chapter-5">Chapter 5 – CSS Basics</a></li>
+        <li><a href="#chapter-6">Chapter 6 – JavaScript Basics</a></li>
+        <li><a href="#chapter-7">Chapter 7 – Practice Projects</a></li>
+        <li><a href="#chapter-8">Chapter 8 – How to Keep Going</a></li>
+      </ul>
+    </nav>
+
+    <section id="chapter-1">
+      <h2>Chapter 1 – What Is Code?</h2>
+      <p>
+        Code is a set of instructions you give a computer so it can do something useful:
+        display a web page, calculate a result, store data, or respond to a button click.
+        You write these instructions in programming languages like <code>HTML</code>,
+        <code>CSS</code>, <code>JavaScript</code>, <code>Python</code>, and many others.
+      </p>
+      <p>
+        At its core, learning to code is learning how to break problems into small,
+        clear steps that a computer can follow. You don’t need to be a “math genius”—
+        you need patience, curiosity, and a willingness to experiment.
+      </p>
+      <div class="tip">
+        <strong>Tip:</strong> When you feel overwhelmed, zoom back out: “What am I trying
+        to make the computer do, in plain language?”
+      </div>
+    </section>
+
+    <section id="chapter-2">
+      <h2>Chapter 2 – Your First Tools</h2>
+      <h3>Text editor</h3>
+      <p>
+        To write code, you need a text editor. You can start with something simple like
+        Notepad (Windows) or TextEdit (macOS in plain text mode), or install a dedicated
+        editor like VS Code, Sublime Text, or Atom.
+      </p>
+
+      <h3>Web browser</h3>
+      <p>
+        For web development, your browser (Chrome, Edge, Firefox, Safari) is where you
+        see your code come to life. You’ll open your <code>.html</code> files in the
+        browser to test and refine your work.
+      </p>
+
+      <h3>Creating your first file</h3>
+      <p>Try this:</p>
+      <ol>
+        <li><strong>Create a new file:</strong> Save it as <code>hello.html</code>.</li>
+        <li><strong>Paste this code:</strong></li>
+      </ol>
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8" /&gt;
+  &lt;title&gt;Hello World&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Hello, world!&lt;/h1&gt;
+  &lt;p&gt;You just wrote your first web page.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      <ol start="3">
+        <li><strong>Open it in your browser:</strong> double-click the file.</li>
+      </ol>
+
+      <div class="exercise">
+        <strong>Exercise:</strong> Change the text inside <code>&lt;h1&gt;</code> and
+        <code>&lt;p&gt;</code>, save the file, and refresh the browser. Notice how the
+        page updates.
+      </div>
+    </section>
+
+    <section id="chapter-3">
+      <h2>Chapter 3 – Thinking Like a Programmer</h2>
+      <h3>Breaking problems into steps</h3>
+      <p>
+        Programmers rarely solve big problems in one leap. Instead, they break them into
+        smaller steps. For example: “Build a website” becomes “create a page,” “add a
+        title,” “add navigation,” “add content,” and so on.
+      </p>
+
+      <h3>Inputs, processing, outputs</h3>
+      <p>
+        Many programs follow a simple pattern: they take <strong>input</strong>, do some
+        <strong>processing</strong>, and produce an <strong>output</strong>. A calculator
+        app takes numbers (input), performs math (processing), and shows the result
+        (output).
+      </p>
+
+      <div class="exercise">
+        <strong>Exercise:</strong> Pick something you use daily (a to-do list app, a
+        search bar, a game) and write down its inputs, processing, and outputs in plain
+        language.
+      </div>
+    </section>
+
+    <section id="chapter-4">
+      <h2>Chapter 4 – HTML Basics</h2>
+      <p>
+        HTML (HyperText Markup Language) is the structure of a web page. It uses
+        <strong>elements</strong> like headings, paragraphs, links, and images to describe
+        what appears on the page.
+      </p>
+
+      <h3>Elements and tags</h3>
+      <p>
+        Most HTML elements have an opening tag and a closing tag:
+        <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>.
+      </p>
+
+      <h3>Common elements</h3>
+      <ul>
+        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> – headings</li>
+        <li><code>&lt;p&gt;</code> – paragraph</li>
+        <li><code>&lt;a&gt;</code> – link</li>
+        <li><code>&lt;img&gt;</code> – image</li>
+        <li><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code> – lists</li>
+      </ul>
+
+      <pre><code>&lt;h1&gt;My First Page&lt;/h1&gt;
+&lt;p&gt;I am learning HTML.&lt;/p&gt;
+&lt;a href="https://example.com"&gt;Visit a site&lt;/a&gt;
+&lt;ul&gt;
+  &lt;li&gt;First item&lt;/li&gt;
+  &lt;li&gt;Second item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+
+      <div class="exercise">
+        <strong>Exercise:</strong> Add a heading, two paragraphs, and a list of three
+        things you want to build with code.
+      </div>
+    </section>
+
+    <section id="chapter-5">
+      <h2>Chapter 5 – CSS Basics</h2>
+      <p>
+        CSS (Cascading Style Sheets) controls how your page looks: colors, fonts,
+        spacing, layout, and more.
+      </p>
+
+      <h3>Inline vs. internal styles</h3>
+      <p>
+        You can write CSS inside a <code>&lt;style&gt;</code> tag in your HTML file, or
+        in a separate <code>.css</code> file. Here’s an internal example:
+      </p>
+
+      <pre><code>&lt;style&gt;
+  body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+  }
+  h1 {
+    color: #1d4ed8;
+  }
+&lt;/style&gt;
+</code></pre>
+
+      <h3>Selectors and properties</h3>
+      <p>
+        A CSS rule has a <strong>selector</strong> (what to style) and
+        <strong>properties</strong> (how to style it). For example:
+        <code>p { color: #333; }</code> means “make all paragraphs dark gray.”
+      </p>
+
+      <div class="exercise">
+        <strong>Exercise:</strong> Change the background color of the page and the color
+        of your main heading. Refresh and see how it feels.
+      </div>
+    </section>
+
+    <section id="chapter-6">
+      <h2>Chapter 6 – JavaScript Basics</h2>
+      <p>
+        JavaScript adds behavior to your page. It lets you respond to clicks, change
+        content, and build interactive experiences.
+      </p>
+
+      <h3>Your first script</h3>
+      <pre><code>&lt;button id="hello-btn"&gt;Click me&lt;/button&gt;
+&lt;p id="message"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+  const button = document.getElementById("hello-btn");
+  const message = document.getElementById("message");
+
+  button.addEventListener("click", () =&gt; {
+    message.textContent = "You just ran JavaScript!";
+  });
+&lt;/script&gt;
+</code></pre>
+
+      <p>
+        Here, JavaScript “listens” for a click on the button and then changes the text of
+        the paragraph.
+      </p>
+
+      <div class="exercise">
+        <strong>Exercise:</strong> Change the message text to something personal, like
+        “I am learning to code, one step at a time.”
+      </div>
+    </section>
+
+    <section id="chapter-7">
+      <h2>Chapter 7 – Practice Projects</h2>
+      <p>Small projects help you connect concepts and build confidence. Try:</p>
+      <ul>
+        <li><strong>Personal homepage:</strong> A simple page with your name, a photo, and a short bio.</li>
+        <li><strong>Favorite links list:</strong> A list of your favorite websites with short descriptions.</li>
+        <li><strong>Quote generator:</strong> A button that shows a different quote each time you click.</li>
+      </ul>
+
+      <div class="exercise">
+        <strong>Exercise:</strong> Pick one project and sketch it on paper first. What sections will it have? What text? What buttons?
+      </div>
+    </section>
+
+    <section id="chapter-8">
+      <h2>Chapter 8 – How to Keep Going</h2>
+      <p>
+        Learning to code is a long-term practice, not a one-time event. You’ll forget
+        things, get stuck, and then suddenly something will click. That’s normal.
+      </p>
+      <ul>
+        <li><strong>Practice regularly:</strong> Even 20–30 minutes a day adds up.</li>
+        <li><strong>Build tiny things:</strong> Don’t wait for a “big idea.” Make small, useful pages.</li>
+        <li><strong>Read other people’s code:</strong> Open examples, tweak them, and see what happens.</li>
+        <li><strong>Keep a learning log:</strong> Write down what you tried, what broke, and what you fixed.</li>
+      </ul>
+
+      <div class="tip">
+        <strong>Final thought:</strong> You don’t have to feel “ready” to call yourself a
+        coder. If you’re writing code, experimenting, and learning—you’re already in.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Learning to Code – www.culturecare.online/</p>
+  </footer>
+</body>
+</html>
