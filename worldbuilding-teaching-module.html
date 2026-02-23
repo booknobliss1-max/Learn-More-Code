@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>How to Teach Browser‑Based Worldbuilding Engines to Beginners</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+      background: #f7f5fb;
+      color: #222;
+    }
+    main {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    }
+    h1, h2, h3 {
+      font-weight: 700;
+      color: #2b1b4b;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 1.9rem;
+    }
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.4rem;
+    }
+    h3 {
+      margin-top: 1.2rem;
+      font-size: 1.1rem;
+    }
+    p {
+      margin: 0.4rem 0 0.8rem;
+    }
+    ul {
+      margin: 0.2rem 0 1rem 1.2rem;
+    }
+    li {
+      margin-bottom: 0.3rem;
+    }
+    .tagline {
+      font-size: 0.95rem;
+      color: #5b4a7a;
+      margin-bottom: 1.5rem;
+    }
+    .pill {
+      display: inline-block;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: #efe9ff;
+      color: #3b2a6b;
+      font-size: 0.8rem;
+      margin-right: 0.4rem;
+      margin-bottom: 0.4rem;
+    }
+    .section-note {
+      font-size: 0.9rem;
+      color: #555;
+      background: #f3f0ff;
+      border-left: 4px solid #7b5cff;
+      padding: 0.6rem 0.8rem;
+      border-radius: 6px;
+      margin-bottom: 1rem;
+    }
+    code {
+      background: #f1f1f7;
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>How to Teach Browser‑Based Worldbuilding Engines to Beginners</h1>
+  <p class="tagline">
+    A CultureCare.Online teaching module at the intersection of instructional design, workforce development,
+    web development, front‑end architecture, and AI‑assisted creative workflows.
+  </p>
+
+  <div>
+    <span class="pill">Educators</span>
+    <span class="pill">Workforce‑development trainers</span>
+    <span class="pill">Creative‑tech beginners</span>
+    <span class="pill">Families &amp; older adults</span>
+    <span class="pill">Community organizations</span>
+  </div>
+
+  <h2>1. Module Purpose</h2>
+  <p>
+    This module helps you teach beginners how to build a simple browser‑based worldbuilding engine.
+    Learners will understand the roles of HTML, CSS, and JavaScript, and will leave with a small,
+    working “story generator” they can customize.
+  </p>
+
+  <h2>2. Step‑by‑Step Teaching Framework</h2>
+
+  <h3>Step 1 — Introduce the Concept</h3>
+  <p>
+    Explain that a worldbuilding engine is a small tool that generates characters, settings, or story
+    elements. Use an analogy: “It’s like a digital deck of story cards you can shuffle.”
+  </p>
+
+  <h3>Step 2 — Show the Three Building Blocks</h3>
+  <ul>
+    <li><strong>HTML</strong> — structure of the page (title, button, output area)</li>
+    <li><strong>CSS</strong> — visual style (colors, fonts, spacing)</li>
+    <li><strong>JavaScript</strong> — logic (how the engine picks and displays story pieces)</li>
+  </ul>
+
+  <h3>Step 3 — Build a Tiny Prototype Together</h3>
+  <p>
+    Start with a single button and a text area. When learners click the button, a character description appears.
+  </p>
+
+  <h3>Step 4 — Add AI‑Assisted Creativity</h3>
+  <p>
+    Use AI tools to generate lists of characters, settings, or prompts that learners can paste into the engine.
+  </p>
+
+  <h3>Step 5 — Let Learners Personalize It</h3>
+  <p>
+    Invite learners to add their own characters, locations, and themes that reflect their lives and communities.
+  </p>
+
+  <h3>Step 6 — Teach Troubleshooting</h3>
+  <p>
+    Walk through common issues: file names, missing links, typos in JavaScript, and how to refresh or redeploy.
+  </p>
+
+  <h3>Step 7 — Teach‑Back Activity</h3>
+  <p>
+    Learners explain their engine to someone else: what HTML, CSS, and JavaScript do, and how to add a new item.
+  </p>
+
+  <h2>3. HTML/CSS/JS Engine Logic (Plain‑Language Breakdown)</h2>
+  <p><strong>HTML:</strong> creates the skeleton — headings, a button, and a box where results appear.</p>
+  <p><strong>CSS:</strong> makes it readable and friendly — larger fonts, high contrast, gentle spacing.</p>
+  <p><strong>JavaScript:</strong> holds a list of story elements, randomly picks one, and updates the text on screen.</p>
+
+  <div class="section-note">
+    You can show learners the idea of “data” (lists of characters) and “logic” (how the computer chooses one)
+    without going deep into theory.
+  </div>
+
+  <h2>4. Beginner‑Friendly Worldbuilding Engine Template (Concept)</h2>
+  <ul>
+    <li><strong>HTML:</strong> page title, “Generate Character” button, and a <code>&lt;div id="output"&gt;</code>.</li>
+    <li><strong>CSS:</strong> large, legible text; simple colors; enough spacing for older eyes.</li>
+    <li><strong>JavaScript:</strong> an array of characters and a function that picks one and writes it into <code>#output</code>.</li>
+  </ul>
+
+  <h2>5. Lesson Plan for Families &amp; Older Adults</h2>
+  <h3>Session 1 — What Is a Worldbuilding Engine?</h3>
+  <p>Discuss stories, characters, and how computers can help us mix and match ideas.</p>
+
+  <h3>Session 2 — Build the First Button</h3>
+  <p>Create a page with a button and a message that changes when clicked.</p>
+
+  <h3>Session 3 — Add Characters &amp; Settings</h3>
+  <p>Let learners add their own character and setting lists into the JavaScript array.</p>
+
+  <h3>Session 4 — Add AI‑Generated Prompts</h3>
+  <p>Use AI to expand the list with fun, surprising ideas; talk about safety and authorship.</p>
+
+  <h3>Session 5 — Personalize the Engine</h3>
+  <p>Adjust colors, fonts, and text to reflect culture, family stories, or community themes.</p>
+
+  <h3>Session 6 — Teach‑Back Day</h3>
+  <p>Each learner explains their engine to a partner, family member, or small group.</p>
+
+  <h2>6. Troubleshooting Guide (Based on Real R&amp;D)</h2>
+  <ul>
+    <li><strong>Page won’t load:</strong> check that the main file is named <code>index.html</code>.</li>
+    <li><strong>Nothing happens when clicking:</strong> confirm the JavaScript file is linked correctly and there are no typos.</li>
+    <li><strong>Text doesn’t change:</strong> check that the element ID in JavaScript matches the HTML (e.g., <code>output</code>).</li>
+    <li><strong>Images don’t show:</strong> verify file names, extensions, and folder paths.</li>
+    <li><strong>Changes don’t appear:</strong> refresh the browser, clear cache, or redeploy if using static hosting.</li>
+  </ul>
+
+  <h2>7. Teach‑Back Activity</h2>
+  <p>
+    Ask each learner to:
+  </p>
+  <ul>
+    <li>Describe what their engine does in one sentence.</li>
+    <li>Point to the HTML, CSS, and JavaScript parts.</li>
+    <li>Show how to add a new character or setting.</li>
+    <li>Explain one problem they solved while building it.</li>
+  </ul>
+
+  <h2>8. Audience Alignment</h2>
+  <p>This module is designed for:</p>
+  <ul>
+    <li>Educators and workforce‑development trainers</li>
+    <li>Creative‑tech beginners</li>
+    <li>Families and intergenerational learners</li>
+    <li>Community organizations, libraries, and after‑school programs</li>
+  </ul>
+</main>
+</body>
+</html>
